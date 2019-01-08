@@ -23,7 +23,7 @@
 		<Metadata name="Catalog.Организации" id="38737319-7237-46c4-a740-9a64a6eb8def" configVersion="f25982ec66be21ff338afea4ea73b65b0e1c625f"/>
 		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b" configVersion="56a1384fce491c4bafb5dc1b27b8045dd568c9d2"/>
 		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ.Template" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b.0" configVersion="e9ec6d733cc25c2af11ff940909a6c6dd5b544c4"/>
-		<Metadata name="Configuration.gettable_ru" id="096d48ce-12aa-45ae-b448-512fb470d016" configVersion="f32eba306a3550a4ca72e03808e681b1fb76ec66"/>
+		<Metadata name="Configuration.gettable_ru" id="096d48ce-12aa-45ae-b448-512fb470d016" configVersion="c67145c58a831fd3cbd081dd33ca54e627e9bcd0"/>
 		<Metadata name="DataProcessor.ПечатьСчетаНаОплату" id="794b1130-3c3e-4ef7-afdd-f0e155419d41" configVersion="1912fcd7c9c284b7bceaa10c5e98e5b6a6a49df0"/>
 		<Metadata name="Document.АктСверкиВзаиморасчетов" id="1d3a03ea-73c7-43f3-a3b2-aafc18d82687" configVersion="6cd09782aac4db0f24ccc4fd7e5a8526113535da">
 			<Metadata name="Document.АктСверкиВзаиморасчетов.Attribute.ДоговорКонтрагента" id="0e380514-a410-496a-b4a4-359086e4792b"/>
