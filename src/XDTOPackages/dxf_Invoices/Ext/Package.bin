@@ -1,0 +1,194 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://gettable.ru/invoice">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<valueType name="VATRate" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">НДС18</enumeration>
+		<enumeration xsi:type="xs:string">НДС0</enumeration>
+		<enumeration xsi:type="xs:string">БезНДС</enumeration>
+		<enumeration xsi:type="xs:string">НДС10</enumeration>
+	</valueType>
+	<valueType name="DocType" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Invoice</enumeration>
+		<enumeration xsi:type="xs:string">Act</enumeration>
+		<enumeration xsi:type="xs:string">InvoiceFacture</enumeration>
+	</valueType>
+	<valueType name="ContractType" base="xs:string">
+		<enumeration xsi:type="xs:string">СПоставщиком</enumeration>
+		<enumeration xsi:type="xs:string">СПокупателем</enumeration>
+		<enumeration xsi:type="xs:string">Прочее</enumeration>
+	</valueType>
+	<valueType name="FieldType" base="xs:string">
+		<enumeration xsi:type="xs:string">INN</enumeration>
+		<enumeration xsi:type="xs:string">KPP</enumeration>
+	</valueType>
+	<valueType name="OptionType" base="xs:string">
+		<enumeration xsi:type="xs:string">OneSigner</enumeration>
+	</valueType>
+	<objectType name="InvoiceData" ordered="false">
+		<property name="DateInvoice" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="DateAct" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="DateInvoiceFacture" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="CustomerID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractID" type="d3p1:UUID"/>
+		<property name="IncludesVAT" type="xs:boolean" nillable="true" default="True"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Services" type="d3p1:Service" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Service" ordered="false">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID" lowerBound="0"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Quantity" type="xs:decimal" default="1"/>
+		<property name="Price" type="xs:decimal"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="VATRate" type="d3p1:VATRate" default="БезНДС"/>
+	</objectType>
+	<objectType name="DocsType" ordered="false">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:DocType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Documents" ordered="false">
+		<property name="Invoice" type="xs:base64Binary" lowerBound="0"/>
+		<property name="Act" type="xs:base64Binary" lowerBound="0"/>
+		<property name="InvoiceFacture" type="xs:base64Binary" lowerBound="0"/>
+	</objectType>
+	<objectType name="Customer" ordered="false">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID"/>
+		<property name="INN">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property name="KPP">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+		<property name="Name" type="xs:string"/>
+		<property name="FullName" type="xs:string"/>
+	</objectType>
+	<objectType name="Contract" ordered="false">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractorID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="OrganizationID" type="d3p1:UUID"/>
+		<property name="Name" type="xs:string" lowerBound="0"/>
+		<property name="Number" type="xs:string"/>
+		<property name="Date" type="xs:date"/>
+		<property name="EndDate" type="xs:date" lowerBound="0"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Type" type="d3p1:ContractType" lowerBound="0"/>
+		<property name="DeletionMark" type="xs:boolean" lowerBound="0"/>
+		<property name="Comment" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="SearchOptions" ordered="false">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="CustomerID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Services" type="d3p1:Service" lowerBound="0" upperBound="-1"/>
+		<property name="DateFrom" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="DateTo" type="xs:dateTime" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DocumentsRef" ordered="false">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Invoice" type="d3p1:DocumentRef" lowerBound="0"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Act" type="d3p1:DocumentRef" lowerBound="0"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="InvoiceFacture" type="d3p1:DocumentRef" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DocumentRef" ordered="false">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID"/>
+		<property name="Number" type="xs:string" lowerBound="0"/>
+		<property name="Date" type="xs:dateTime" lowerBound="0"/>
+	</objectType>
+	<objectType name="ArrayOfDocumentsRef" ordered="false">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:DocumentsRef" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ReconciliationActData" ordered="false">
+		<property name="BeginPeriod" type="xs:dateTime"/>
+		<property name="EndPeriod" type="xs:dateTime"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="OrganizationID" type="d3p1:UUID" lowerBound="1" upperBound="-1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="CustomerID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractID" type="d3p1:UUID" lowerBound="0" nillable="true"/>
+		<property name="Date" type="xs:dateTime" lowerBound="0"/>
+	</objectType>
+	<objectType name="Account" ordered="false" sequenced="true">
+		<property name="CurrentAcc" type="xs:anyType"/>
+		<property name="CorrAcc" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="Bank" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="RCBIC" type="xs:anyType" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="AccountCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:Account" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Address" ordered="false" sequenced="true">
+		<property name="Presentation" type="xs:string"/>
+	</objectType>
+	<objectType name="Contact" ordered="false" sequenced="true">
+		<property name="Name" type="xs:anyType"/>
+		<property name="Post" type="xs:anyType"/>
+	</objectType>
+	<objectType name="Filter" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Field" type="d3p1:FieldType"/>
+		<property name="Value" type="xs:string"/>
+	</objectType>
+	<objectType name="FilterCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:Filter" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Payment" ordered="false" sequenced="true">
+		<property name="Date" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractorID" type="d3p1:UUID" lowerBound="0"/>
+		<property name="Amount" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType name="PaymentCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:Payment" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ContactCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:Contact" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ContractorCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:Contractor" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Contractor" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID" lowerBound="0"/>
+		<property name="INN">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="12"/>
+		</property>
+		<property name="KPP" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="9"/>
+		</property>
+		<property name="Name" type="xs:string"/>
+		<property name="FullName" type="xs:string"/>
+		<property name="Parent" type="xs:string"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Contact" type="d3p1:ContactCollection"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="LegalAddress" type="d3p1:Address"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="ActualAddress" type="d3p1:Address"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="PostalAddress" type="d3p1:Address"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Account" type="d3p1:AccountCollection"/>
+		<property name="DeletionMark" type="xs:boolean" lowerBound="0"/>
+		<property name="Comment" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ContractCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:Contract" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Reconciliation" ordered="false">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractorID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractID" type="d3p1:UUID" lowerBound="0" nillable="true"/>
+		<property name="Payd" type="xs:decimal"/>
+		<property name="Accrued" type="xs:decimal"/>
+	</objectType>
+	<objectType name="ReconciliationCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:Reconciliation" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="InvoicePayment" ordered="false">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Invoice" type="d3p1:DocumentRef" lowerBound="0" nillable="true"/>
+		<property name="Customer" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="CustomerID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="ActAndInvoiceFacture" type="d3p1:ActAndInvoiceFacture" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Services" type="d3p1:Service" lowerBound="0" upperBound="-1"/>
+		<property name="Payment" type="xs:decimal" lowerBound="0"/>
+		<property name="Amount" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType name="InvoicePaymentCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:InvoicePayment" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ActAndInvoiceFacture">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Act" type="d3p1:DocumentRef" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="InvoiceFacture" type="d3p1:DocumentRef" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="PrintOption" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Document" type="d3p1:DocType"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Type" type="d3p1:OptionType"/>
+		<property name="Value" type="xs:anySimpleType"/>
+	</objectType>
+	<objectType name="PrintOptionCollection" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:PrintOption" lowerBound="0" upperBound="-1"/>
+	</objectType>
+</package>
