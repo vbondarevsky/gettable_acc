@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.8">
 	<ConfigVersions>
-		<Metadata name="Catalog.ДоговорыКонтрагентов" id="2782813b-b0e3-4cfd-9cd3-0c63141a8e76" configVersion="fa907262f94c9ed8a5025a63de6975086c4f9a47">
+		<Metadata name="Catalog.ДоговорыКонтрагентов" id="2782813b-b0e3-4cfd-9cd3-0c63141a8e76" configVersion="efa97feefb7940f3cf28ff8818b517ea6211797d">
 			<Metadata name="Catalog.ДоговорыКонтрагентов.Attribute.Организация" id="040354be-d913-414f-a77d-5cd2c3ec4e65"/>
 			<Metadata name="Catalog.ДоговорыКонтрагентов.Attribute.СрокДействия" id="0545bdf8-c6c5-4264-8a22-dcaad655da18"/>
 			<Metadata name="Catalog.ДоговорыКонтрагентов.Attribute.Комментарий" id="20229d4b-0879-4654-ac81-762b58213e8d"/>
@@ -9,43 +9,43 @@
 			<Metadata name="Catalog.ДоговорыКонтрагентов.Attribute.Дата" id="9279003d-5604-427d-9bbf-c26bef9e64f6"/>
 			<Metadata name="Catalog.ДоговорыКонтрагентов.Attribute.Номер" id="da726c43-c62d-457f-bd28-9f94e14f57ee"/>
 		</Metadata>
-		<Metadata name="Catalog.Контрагенты" id="3e7f6983-a6b1-47c2-84cc-e13351a97ff2" configVersion="bc729f66fee26a30c47630c1cea2bbacff27eaf8">
+		<Metadata name="Catalog.Контрагенты" id="3e7f6983-a6b1-47c2-84cc-e13351a97ff2" configVersion="a28d7fb15e2fde81b3950d50a2f2e9a511974b93">
 			<Metadata name="Catalog.Контрагенты.Attribute.ЮридическоеФизическоеЛицо" id="19022550-e9d3-4967-81d4-16dd97d6de9d"/>
 			<Metadata name="Catalog.Контрагенты.Attribute.НаименованиеПолное" id="603ea53a-e174-4e35-abd6-9de27c589d1e"/>
 			<Metadata name="Catalog.Контрагенты.Attribute.КПП" id="681fe73c-c95c-4edb-a3cc-cf11be21351a"/>
 			<Metadata name="Catalog.Контрагенты.Attribute.ИНН" id="8655d513-7794-4aed-acba-0d8b67d6aa7f"/>
 			<Metadata name="Catalog.Контрагенты.TabularSection.КонтактнаяИнформация" id="cac9e12f-e7f2-4c8b-9f2c-468f881a43fd"/>
 		</Metadata>
-		<Metadata name="Catalog.Номенклатура" id="36b6045d-8d97-4c9c-9bf1-0bc082ce6f81" configVersion="64b675059a6c155cea6466f74574a40f5446dc1e">
+		<Metadata name="Catalog.Номенклатура" id="36b6045d-8d97-4c9c-9bf1-0bc082ce6f81" configVersion="a4e12a63d107b850053e2cf840f52a23459869d6">
 			<Metadata name="Catalog.Номенклатура.Attribute.НоменклатурнаяГруппа" id="1eb6f1bc-397b-4c2e-836f-f77f14d4bae9"/>
 		</Metadata>
-		<Metadata name="Catalog.НоменклатурныеГруппы" id="9fe5cc26-47fb-4e05-ba66-858a61b56c80" configVersion="6c580d4ae093f96d1c7f22086f6dc1fc51fe716e"/>
-		<Metadata name="Catalog.Организации" id="38737319-7237-46c4-a740-9a64a6eb8def" configVersion="f25982ec66be21ff338afea4ea73b65b0e1c625f"/>
-		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b" configVersion="56a1384fce491c4bafb5dc1b27b8045dd568c9d2"/>
-		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ.Template" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b.0" configVersion="e9ec6d733cc25c2af11ff940909a6c6dd5b544c4"/>
-		<Metadata name="Configuration.gettable_ru" id="096d48ce-12aa-45ae-b448-512fb470d016" configVersion="c67145c58a831fd3cbd081dd33ca54e627e9bcd0"/>
-		<Metadata name="DataProcessor.ПечатьСчетаНаОплату" id="794b1130-3c3e-4ef7-afdd-f0e155419d41" configVersion="1912fcd7c9c284b7bceaa10c5e98e5b6a6a49df0"/>
-		<Metadata name="Document.АктСверкиВзаиморасчетов" id="1d3a03ea-73c7-43f3-a3b2-aafc18d82687" configVersion="6cd09782aac4db0f24ccc4fd7e5a8526113535da">
+		<Metadata name="Catalog.НоменклатурныеГруппы" id="9fe5cc26-47fb-4e05-ba66-858a61b56c80" configVersion="dff3a344dfdb1312be752a9a7d149674417d8817"/>
+		<Metadata name="Catalog.Организации" id="38737319-7237-46c4-a740-9a64a6eb8def" configVersion="dfe923bbaa6e5827bf61f4fcea030957db171f44"/>
+		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b" configVersion="ceb1e20fbb9b0ac44c02986e2c36b81e4a00ea72"/>
+		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ.Template" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b.0" configVersion="8826dc3bc9c485003345dbf1667315b8f3bde052"/>
+		<Metadata name="Configuration.gettable_ru" id="096d48ce-12aa-45ae-b448-512fb470d016" configVersion="7d6d3c8c63050813167ba6f84ccebf766a6eae99"/>
+		<Metadata name="DataProcessor.ПечатьСчетаНаОплату" id="794b1130-3c3e-4ef7-afdd-f0e155419d41" configVersion="a7a3dd0db559166200b5926e548431825b809943"/>
+		<Metadata name="Document.АктСверкиВзаиморасчетов" id="1d3a03ea-73c7-43f3-a3b2-aafc18d82687" configVersion="b1aa6fcef725cb1dbcf58b0e5f35ffc370627ec1">
 			<Metadata name="Document.АктСверкиВзаиморасчетов.Attribute.ДоговорКонтрагента" id="0e380514-a410-496a-b4a4-359086e4792b"/>
 			<Metadata name="Document.АктСверкиВзаиморасчетов.Attribute.Организация" id="1db54af2-760a-40fc-aade-1699ae6710df"/>
 			<Metadata name="Document.АктСверкиВзаиморасчетов.Attribute.ДатаОкончания" id="98527aad-6d9a-4d90-9990-10650eb33fd5"/>
 			<Metadata name="Document.АктСверкиВзаиморасчетов.Attribute.ДатаНачала" id="b4f740ac-9019-40c5-89fb-b2525bb977fb"/>
 			<Metadata name="Document.АктСверкиВзаиморасчетов.Attribute.Контрагент" id="eceb09e8-9397-491e-a0ea-d6628b89e50a"/>
 		</Metadata>
-		<Metadata name="Document.ПоступлениеНаРасчетныйСчет" id="b7b78f72-6a41-4991-b05d-7ef4c8d54d2a" configVersion="874f5b22a684984d0cb205de4e68f67c905cf0e2">
+		<Metadata name="Document.ПоступлениеНаРасчетныйСчет" id="b7b78f72-6a41-4991-b05d-7ef4c8d54d2a" configVersion="406755d6c487f370e9cb0d4f251f894981c5d739">
 			<Metadata name="Document.ПоступлениеНаРасчетныйСчет.TabularSection.РасшифровкаПлатежа" id="18c1c8f7-7366-44d3-943f-30b63651b873"/>
 			<Metadata name="Document.ПоступлениеНаРасчетныйСчет.TabularSection.РасшифровкаПлатежа.Attribute.СуммаПлатежа" id="b8e2555e-f023-4155-bae5-1a0e812beea2"/>
 			<Metadata name="Document.ПоступлениеНаРасчетныйСчет.TabularSection.РасшифровкаПлатежа.Attribute.СчетНаОплату" id="e639d41b-39d3-4706-87e2-7a90595ccadb"/>
 		</Metadata>
-		<Metadata name="Document.ПриходныйКассовыйОрдер" id="adac1ec1-d822-4553-8206-48e592f4740a" configVersion="a88431c78906b0d6aa4e526ef95ad22b4b898066">
+		<Metadata name="Document.ПриходныйКассовыйОрдер" id="adac1ec1-d822-4553-8206-48e592f4740a" configVersion="f4f64823d3f7224bd557f88c4c18231b6a822b70">
 			<Metadata name="Document.ПриходныйКассовыйОрдер.TabularSection.РасшифровкаПлатежа.Attribute.СчетНаОплату" id="37d67e66-a778-4287-a516-613df16c3767"/>
 			<Metadata name="Document.ПриходныйКассовыйОрдер.TabularSection.РасшифровкаПлатежа.Attribute.СуммаПлатежа" id="7e2ed61a-39ab-45c9-82ed-df87613377b8"/>
 			<Metadata name="Document.ПриходныйКассовыйОрдер.TabularSection.РасшифровкаПлатежа" id="9c328ae5-3fff-419f-8d10-6c49b39cc125"/>
 		</Metadata>
-		<Metadata name="Document.РеализацияТоваровУслуг" id="b4a841cc-27ac-42c6-8e8a-5098d21e943c" configVersion="ae57606065f5762001a5a3595544a27615d89569">
+		<Metadata name="Document.РеализацияТоваровУслуг" id="b4a841cc-27ac-42c6-8e8a-5098d21e943c" configVersion="310bd96e4c4c8209082d0da52c8503519733764e">
 			<Metadata name="Document.РеализацияТоваровУслуг.Attribute.СчетНаОплатуПокупателю" id="54754473-fb5b-48dc-8bdb-a74a9faeaca5"/>
 		</Metadata>
-		<Metadata name="Document.СчетНаОплатуПокупателю" id="9f085117-91aa-4a01-ae69-70ca9e679c9d" configVersion="b0e46b590539d90532793f94aeb8a182ed200bca">
+		<Metadata name="Document.СчетНаОплатуПокупателю" id="9f085117-91aa-4a01-ae69-70ca9e679c9d" configVersion="bb2d187cf400c4ee042b138f332ef38d2db3b6b8">
 			<Metadata name="Document.СчетНаОплатуПокупателю.Attribute.ДоговорКонтрагента" id="003a0a64-a89a-4c8c-9bc2-b66ec5756903"/>
 			<Metadata name="Document.СчетНаОплатуПокупателю.TabularSection.Товары.Attribute.Сумма" id="312c6d85-5b1d-4b44-b959-1c317052b0e6"/>
 			<Metadata name="Document.СчетНаОплатуПокупателю.TabularSection.Товары.Attribute.СтавкаНДС" id="42c04785-9b5e-4dba-a91d-929f6cad1010"/>
@@ -56,22 +56,22 @@
 			<Metadata name="Document.СчетНаОплатуПокупателю.TabularSection.Товары" id="deb04f78-0079-44c6-aa39-2d7665fd5c37"/>
 			<Metadata name="Document.СчетНаОплатуПокупателю.TabularSection.Товары.Attribute.Количество" id="ee456fd5-a489-476b-8518-78a24278eeab"/>
 		</Metadata>
-		<Metadata name="Document.СчетФактураВыданный" id="9a983baf-3960-47e7-9f60-b537a2be0f37" configVersion="b3d82736810d110500f27e323d9af6258560b3d9">
+		<Metadata name="Document.СчетФактураВыданный" id="9a983baf-3960-47e7-9f60-b537a2be0f37" configVersion="1a1378882554179282b0cef5792de87c7fde2468">
 			<Metadata name="Document.СчетФактураВыданный.TabularSection.ДокументыОснования.Attribute.ДокументОснование" id="dcad008d-2c5f-4f11-b426-5777ba6179a4"/>
 			<Metadata name="Document.СчетФактураВыданный.TabularSection.ДокументыОснования" id="e48b1e7d-c1c7-4c78-8e78-66b8a51bd122"/>
 		</Metadata>
-		<Metadata name="Enum.ВидыДоговоровКонтрагентов" id="694644cb-d3b6-4dc7-b2e7-819cbe3fdf7d" configVersion="e05e423ca12a7c4c56d9a9c0f46346df47edf5a1"/>
-		<Metadata name="Enum.СтавкиНДС" id="fc40cb1e-21ea-4556-8371-46d20197b171" configVersion="0cbb8c3841f4e5b449a431bf9a0b1aaf68b56f40"/>
-		<Metadata name="Enum.СтатусОплатыСчета" id="4eec267a-6cf6-4d52-8c96-2b8ebf98604c" configVersion="45016bc4bfaba855dfcb5581815787db5896ec0a">
+		<Metadata name="Enum.ВидыДоговоровКонтрагентов" id="694644cb-d3b6-4dc7-b2e7-819cbe3fdf7d" configVersion="5a9d76a4fb2988983224f7e7c91ec7906a1fee47"/>
+		<Metadata name="Enum.СтавкиНДС" id="fc40cb1e-21ea-4556-8371-46d20197b171" configVersion="9ed2391f15da0c01263c0c8a6cd6839fc2d3786f"/>
+		<Metadata name="Enum.СтатусОплатыСчета" id="4eec267a-6cf6-4d52-8c96-2b8ebf98604c" configVersion="4ebf1b90a89c9bc53bc8854c0eb0c985784261bc">
 			<Metadata name="Enum.СтатусОплатыСчета.EnumValue.Отменен" id="31cfe1da-6b63-4bbb-a9a6-e3eb653199b4"/>
 		</Metadata>
-		<Metadata name="Enum.ЮридическоеФизическоеЛицо" id="53c5ae62-694c-4c11-9629-d04789fbbcd0" configVersion="6f380f0e71a35611f0db1c97187bcbc92ce45b81"/>
-		<Metadata name="InformationRegister.СтатусыДокументов" id="09c70cf5-92e6-4674-8ba7-ae2b5a76577c" configVersion="dae6e07f0058ac1ab2aa833fbf75ffd3ebc366e7">
+		<Metadata name="Enum.ЮридическоеФизическоеЛицо" id="53c5ae62-694c-4c11-9629-d04789fbbcd0" configVersion="d4034360b5856be74f9f15227f996d8cde6f246c"/>
+		<Metadata name="InformationRegister.СтатусыДокументов" id="09c70cf5-92e6-4674-8ba7-ae2b5a76577c" configVersion="daecb37d315fd270b66c2cce43aef9dbb1e57b90">
 			<Metadata name="InformationRegister.СтатусыДокументов.Resource.Статус" id="0e676bc9-d0f2-49b1-be26-c36fd6d320ae"/>
 			<Metadata name="InformationRegister.СтатусыДокументов.Dimension.Документ" id="f154d18c-1c67-4a97-9e8d-82af434ad33b"/>
 		</Metadata>
-		<Metadata name="Language.Русский" id="e298dea6-4bc8-4f4e-b0aa-af03d9956a9d" configVersion="53fd4d89ff93df823c296961412a25a0afd4882a"/>
-		<Metadata name="WebService.Invoices" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0" configVersion="10720724f56385b98ce57c3a1725ea917eabda82">
+		<Metadata name="Language.Русский" id="e298dea6-4bc8-4f4e-b0aa-af03d9956a9d" configVersion="a0cbad3a0a676fba180a0c7534171f539bfdaa84"/>
+		<Metadata name="WebService.Invoices" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0" configVersion="761b85b9fc49a3d7759c8c42ed8ffb5cd91508b6">
 			<Metadata name="WebService.Invoices.Operation.UpdateDocuments" id="02f13582-1c1c-4fc5-bc7f-ac97370780ee"/>
 			<Metadata name="WebService.Invoices.Operation.GetContract" id="03499a0e-24d8-4176-b82c-6efa3c388d4e"/>
 			<Metadata name="WebService.Invoices.Operation.GetInvoicePayment.Parameter.EndPeriod" id="06735ca7-3a58-4432-b8ab-29dda19a9ff7"/>
@@ -123,8 +123,8 @@
 			<Metadata name="WebService.Invoices.Operation.CreateContract.Parameter.Contract" id="e9c84728-f2fb-40d6-9700-9a59d291f9d0"/>
 			<Metadata name="WebService.Invoices.Operation.PrintDocuments.Parameter.Stamp" id="f4b17e37-d026-4068-970d-7d6335cf4391"/>
 		</Metadata>
-		<Metadata name="WebService.Invoices.Module" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0.0" configVersion="640c95551f5812729b61255d1dbd30ae7b6b43d7"/>
-		<Metadata name="XDTOPackage.dxf_Invoices" id="df414cd5-ce21-42b9-a818-bf655e6e6e47" configVersion="21af6994443f76f77f999cb6d0c5165762d49b21"/>
+		<Metadata name="WebService.Invoices.Module" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0.0" configVersion="8fdbcb903bc359b590343001ff887fa56247ac75"/>
+		<Metadata name="XDTOPackage.dxf_Invoices" id="df414cd5-ce21-42b9-a818-bf655e6e6e47" configVersion="6bd31784f1331c250f4172536b239af18222a8e0"/>
 		<Metadata name="XDTOPackage.dxf_Invoices.Package" id="df414cd5-ce21-42b9-a818-bf655e6e6e47.0" configVersion="96a5ea4af254f857a4204e931b3970e8dd959413"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
