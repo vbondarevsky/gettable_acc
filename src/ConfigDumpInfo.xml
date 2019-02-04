@@ -23,7 +23,7 @@
 		<Metadata name="Catalog.Организации" id="38737319-7237-46c4-a740-9a64a6eb8def" configVersion="dfe923bbaa6e5827bf61f4fcea030957db171f44"/>
 		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b" configVersion="ceb1e20fbb9b0ac44c02986e2c36b81e4a00ea72"/>
 		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ.Template" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b.0" configVersion="8826dc3bc9c485003345dbf1667315b8f3bde052"/>
-		<Metadata name="Configuration.gettable_ru" id="096d48ce-12aa-45ae-b448-512fb470d016" configVersion="7d6d3c8c63050813167ba6f84ccebf766a6eae99"/>
+		<Metadata name="Configuration.gettable_ru" id="096d48ce-12aa-45ae-b448-512fb470d016" configVersion="4922d54865f86ce7d3f3d8e51974461fcf3e89dd"/>
 		<Metadata name="DataProcessor.ПечатьСчетаНаОплату" id="794b1130-3c3e-4ef7-afdd-f0e155419d41" configVersion="a7a3dd0db559166200b5926e548431825b809943"/>
 		<Metadata name="Document.АктСверкиВзаиморасчетов" id="1d3a03ea-73c7-43f3-a3b2-aafc18d82687" configVersion="b1aa6fcef725cb1dbcf58b0e5f35ffc370627ec1">
 			<Metadata name="Document.АктСверкиВзаиморасчетов.Attribute.ДоговорКонтрагента" id="0e380514-a410-496a-b4a4-359086e4792b"/>
@@ -125,6 +125,6 @@
 		</Metadata>
 		<Metadata name="WebService.Invoices.Module" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0.0" configVersion="8fdbcb903bc359b590343001ff887fa56247ac75"/>
 		<Metadata name="XDTOPackage.dxf_Invoices" id="df414cd5-ce21-42b9-a818-bf655e6e6e47" configVersion="6bd31784f1331c250f4172536b239af18222a8e0"/>
-		<Metadata name="XDTOPackage.dxf_Invoices.Package" id="df414cd5-ce21-42b9-a818-bf655e6e6e47.0" configVersion="96a5ea4af254f857a4204e931b3970e8dd959413"/>
+		<Metadata name="XDTOPackage.dxf_Invoices.Package" id="df414cd5-ce21-42b9-a818-bf655e6e6e47.0" configVersion="6e74fd8a2334c1ce4808a29ad2679bf16d1d07af"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

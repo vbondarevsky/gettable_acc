@@ -5,6 +5,7 @@
 		<enumeration xsi:type="xs:string">НДС0</enumeration>
 		<enumeration xsi:type="xs:string">БезНДС</enumeration>
 		<enumeration xsi:type="xs:string">НДС10</enumeration>
+		<enumeration xsi:type="xs:string">НДС20</enumeration>
 	</valueType>
 	<valueType name="DocType" base="xs:string" variety="Atomic">
 		<enumeration xsi:type="xs:string">Invoice</enumeration>
