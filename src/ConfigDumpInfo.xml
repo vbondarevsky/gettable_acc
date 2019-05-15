@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.8">
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
 	<ConfigVersions>
 		<Metadata name="Catalog.ДоговорыКонтрагентов" id="2782813b-b0e3-4cfd-9cd3-0c63141a8e76" configVersion="efa97feefb7940f3cf28ff8818b517ea6211797d">
 			<Metadata name="Catalog.ДоговорыКонтрагентов.Attribute.Организация" id="040354be-d913-414f-a77d-5cd2c3ec4e65"/>
@@ -23,7 +23,7 @@
 		<Metadata name="Catalog.Организации" id="38737319-7237-46c4-a740-9a64a6eb8def" configVersion="dfe923bbaa6e5827bf61f4fcea030957db171f44"/>
 		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b" configVersion="ceb1e20fbb9b0ac44c02986e2c36b81e4a00ea72"/>
 		<Metadata name="CommonTemplate.ПФ_MXL_СчетЗаказ.Template" id="5cfdaedb-6ea7-411c-9fd6-c45ccae83e2b.0" configVersion="8826dc3bc9c485003345dbf1667315b8f3bde052"/>
-		<Metadata name="Configuration.gettable_ru" id="096d48ce-12aa-45ae-b448-512fb470d016" configVersion="4922d54865f86ce7d3f3d8e51974461fcf3e89dd"/>
+		<Metadata name="Configuration.gettable_ru" id="096d48ce-12aa-45ae-b448-512fb470d016" configVersion="1b2301f1b4de2735cc4d1d97fbe1998942d74139"/>
 		<Metadata name="DataProcessor.ПечатьСчетаНаОплату" id="794b1130-3c3e-4ef7-afdd-f0e155419d41" configVersion="a7a3dd0db559166200b5926e548431825b809943"/>
 		<Metadata name="Document.АктСверкиВзаиморасчетов" id="1d3a03ea-73c7-43f3-a3b2-aafc18d82687" configVersion="b1aa6fcef725cb1dbcf58b0e5f35ffc370627ec1">
 			<Metadata name="Document.АктСверкиВзаиморасчетов.Attribute.ДоговорКонтрагента" id="0e380514-a410-496a-b4a4-359086e4792b"/>
@@ -71,7 +71,7 @@
 			<Metadata name="InformationRegister.СтатусыДокументов.Dimension.Документ" id="f154d18c-1c67-4a97-9e8d-82af434ad33b"/>
 		</Metadata>
 		<Metadata name="Language.Русский" id="e298dea6-4bc8-4f4e-b0aa-af03d9956a9d" configVersion="a0cbad3a0a676fba180a0c7534171f539bfdaa84"/>
-		<Metadata name="WebService.Invoices" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0" configVersion="761b85b9fc49a3d7759c8c42ed8ffb5cd91508b6">
+		<Metadata name="WebService.Invoices" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0" configVersion="eb0d02172baddcebbf6ed9145b690074c18ba057">
 			<Metadata name="WebService.Invoices.Operation.UpdateDocuments" id="02f13582-1c1c-4fc5-bc7f-ac97370780ee"/>
 			<Metadata name="WebService.Invoices.Operation.GetContract" id="03499a0e-24d8-4176-b82c-6efa3c388d4e"/>
 			<Metadata name="WebService.Invoices.Operation.GetInvoicePayment.Parameter.EndPeriod" id="06735ca7-3a58-4432-b8ab-29dda19a9ff7"/>
@@ -123,7 +123,7 @@
 			<Metadata name="WebService.Invoices.Operation.CreateContract.Parameter.Contract" id="e9c84728-f2fb-40d6-9700-9a59d291f9d0"/>
 			<Metadata name="WebService.Invoices.Operation.PrintDocuments.Parameter.Stamp" id="f4b17e37-d026-4068-970d-7d6335cf4391"/>
 		</Metadata>
-		<Metadata name="WebService.Invoices.Module" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0.0" configVersion="8fdbcb903bc359b590343001ff887fa56247ac75"/>
+		<Metadata name="WebService.Invoices.Module" id="b328f148-5640-4c3a-9d5c-fdd4d1c4b0c0.0" configVersion="102f263afc71c0c60a29c31366da100de6be2b2f"/>
 		<Metadata name="XDTOPackage.dxf_Invoices" id="df414cd5-ce21-42b9-a818-bf655e6e6e47" configVersion="6bd31784f1331c250f4172536b239af18222a8e0"/>
 		<Metadata name="XDTOPackage.dxf_Invoices.Package" id="df414cd5-ce21-42b9-a818-bf655e6e6e47.0" configVersion="6e74fd8a2334c1ce4808a29ad2679bf16d1d07af"/>
 	</ConfigVersions>

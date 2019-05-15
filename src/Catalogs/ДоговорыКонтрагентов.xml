@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<Catalog uuid="2782813b-b0e3-4cfd-9cd3-0c63141a8e76">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.ДоговорыКонтрагентов" category="Object">
@@ -33,6 +33,7 @@
 		</Properties>
 		<ChildObjects>
 			<Attribute uuid="9279003d-5604-427d-9bbf-c26bef9e64f6">
+				<InternalInfo/>
 				<Properties>
 					<Name>Дата</Name>
 					<Comment/>
@@ -46,6 +47,7 @@
 				</Properties>
 			</Attribute>
 			<Attribute uuid="da726c43-c62d-457f-bd28-9f94e14f57ee">
+				<InternalInfo/>
 				<Properties>
 					<Name>Номер</Name>
 					<Comment/>
@@ -60,6 +62,7 @@
 				</Properties>
 			</Attribute>
 			<Attribute uuid="0545bdf8-c6c5-4264-8a22-dcaad655da18">
+				<InternalInfo/>
 				<Properties>
 					<Name>СрокДействия</Name>
 					<Comment/>
@@ -73,6 +76,7 @@
 				</Properties>
 			</Attribute>
 			<Attribute uuid="040354be-d913-414f-a77d-5cd2c3ec4e65">
+				<InternalInfo/>
 				<Properties>
 					<Name>Организация</Name>
 					<Comment/>
@@ -83,6 +87,7 @@
 				</Properties>
 			</Attribute>
 			<Attribute uuid="6b64b986-a6fe-43a5-94c8-e4b417185e2b">
+				<InternalInfo/>
 				<Properties>
 					<Name>ВидДоговора</Name>
 					<Comment/>
@@ -93,6 +98,7 @@
 				</Properties>
 			</Attribute>
 			<Attribute uuid="20229d4b-0879-4654-ac81-762b58213e8d">
+				<InternalInfo/>
 				<Properties>
 					<Name>Комментарий</Name>
 					<Comment/>
