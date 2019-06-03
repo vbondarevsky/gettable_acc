@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.8">
 	<Document uuid="9f085117-91aa-4a01-ae69-70ca9e679c9d">
 		<InternalInfo>
 			<xr:GeneratedType name="DocumentObject.СчетНаОплатуПокупателю" category="Object">
@@ -31,7 +31,6 @@
 		</Properties>
 		<ChildObjects>
 			<Attribute uuid="dce90eba-bb67-4866-9659-c6916ebc50d2">
-				<InternalInfo/>
 				<Properties>
 					<Name>Контрагент</Name>
 					<Comment/>
@@ -42,7 +41,6 @@
 				</Properties>
 			</Attribute>
 			<Attribute uuid="003a0a64-a89a-4c8c-9bc2-b66ec5756903">
-				<InternalInfo/>
 				<Properties>
 					<Name>ДоговорКонтрагента</Name>
 					<Comment/>
@@ -53,7 +51,6 @@
 				</Properties>
 			</Attribute>
 			<Attribute uuid="8c21b4e4-7ff4-42d0-ad60-e7ec909afebd">
-				<InternalInfo/>
 				<Properties>
 					<Name>СуммаДокумента</Name>
 					<Comment/>
@@ -86,7 +83,6 @@
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="cf462e88-7eb9-4fc5-af28-85ac90e57aa7">
-						<InternalInfo/>
 						<Properties>
 							<Name>Номенклатура</Name>
 							<Comment/>
@@ -97,7 +93,6 @@
 						</Properties>
 					</Attribute>
 					<Attribute uuid="ee456fd5-a489-476b-8518-78a24278eeab">
-						<InternalInfo/>
 						<Properties>
 							<Name>Количество</Name>
 							<Comment/>
@@ -113,7 +108,6 @@
 						</Properties>
 					</Attribute>
 					<Attribute uuid="312c6d85-5b1d-4b44-b959-1c317052b0e6">
-						<InternalInfo/>
 						<Properties>
 							<Name>Сумма</Name>
 							<Comment/>
@@ -129,7 +123,6 @@
 						</Properties>
 					</Attribute>
 					<Attribute uuid="42c04785-9b5e-4dba-a91d-929f6cad1010">
-						<InternalInfo/>
 						<Properties>
 							<Name>СтавкаНДС</Name>
 							<Comment/>
@@ -140,7 +133,6 @@
 						</Properties>
 					</Attribute>
 					<Attribute uuid="5992763b-4ebb-412f-af43-25fbeea32e08">
-						<InternalInfo/>
 						<Properties>
 							<Name>Содержание</Name>
 							<Comment/>

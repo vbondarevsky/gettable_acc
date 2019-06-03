@@ -70,6 +70,7 @@
 		<property xmlns:d3p1="http://gettable.ru/invoice" name="Type" type="d3p1:ContractType" lowerBound="0"/>
 		<property name="DeletionMark" type="xs:boolean" lowerBound="0"/>
 		<property name="Comment" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="Properties" type="d3p1:Property" lowerBound="0" upperBound="-1"/>
 	</objectType>
 	<objectType name="SearchOptions" ordered="false">
 		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="CustomerID" type="d3p1:UUID"/>
@@ -95,8 +96,9 @@
 		<property name="BeginPeriod" type="xs:dateTime"/>
 		<property name="EndPeriod" type="xs:dateTime"/>
 		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="OrganizationID" type="d3p1:UUID" lowerBound="1" upperBound="-1"/>
-		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="CustomerID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="CustomerID" type="d3p1:UUID" lowerBound="0" nillable="true"/>
 		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ContractID" type="d3p1:UUID" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://gettable.ru/invoice" name="ContractProperties" type="d3p1:Property" lowerBound="0" upperBound="-1" nillable="true"/>
 		<property name="Date" type="xs:dateTime" lowerBound="0"/>
 	</objectType>
 	<objectType name="Account" ordered="false" sequenced="true">
@@ -191,5 +193,9 @@
 	</objectType>
 	<objectType name="PrintOptionCollection" ordered="false" sequenced="true">
 		<property xmlns:d3p1="http://gettable.ru/invoice" name="Item" type="d3p1:PrintOption" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Property" ordered="false" sequenced="true">
+		<property name="Key" type="xs:string"/>
+		<property name="Value" type="xs:anySimpleType"/>
 	</objectType>
 </package>
